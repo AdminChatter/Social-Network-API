@@ -1,7 +1,7 @@
 import { Router } from 'express';
 const router = Router();
 
-import { getApplications, getSingleApplication, createApplication, updateApplication, deleteApplication, addTag, removeTag } from '../../controllers/appController.js';
+import { getApplications, getSingleApplication, createApplication, updateApplication, deleteApplication, addTag, removeTag } from '../../controllers/thoughtsController.js';
 
 // /api/applications
 router.route('/').get(getApplications).post(createApplication);
